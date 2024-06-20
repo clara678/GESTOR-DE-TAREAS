@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after{ box-sizing: border-box;}
+
+
+.formulario {
+    display: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-image: url('pi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: #1a73e8;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+button.nueva {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button.nueva:hover {
+    background-color: #155ab6;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+.formulario {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.formulario button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button#cerrar {
+    background-color: #f44336;
+}
+
+.formulario button#cerrar:hover {
+    background-color: #e53935;
+}
+
+.formulario button#anadir:hover {
+    background-color: #155ab6;
+}
+
+.tareas {
+    width: 320px;
+}
+
+.tarea {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarea:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tarea h3 {
+    margin: 0 0 5px 0;
+    color: #1a73e8;
+    font-size: 1.2rem;
+}
+
+.tarea p {
+    margin: 0;
+    color: #555;
+}
+
+.tarea .botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.tarea button {
+    background-color:  #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tarea button:hover {
+    background-color: #f06562;
+}
+.nav {
+    width: 100%;
+    background-color: #1a73e8;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nav h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+}

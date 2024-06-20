@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+    <h1>ORGANIZADOR DE TAREAS</h1>
+    </div>
+    <button class="nueva">Tarea Nueva</button>
+    <div class="contenedor">
+    <div class="tareas" id="listaTareas"></div>
+
+    <div class="formulario">
+       
+        <form action="">
+            <div class="titulo">
+                <label for="titulo">Titulo:</label>
+                <input type="text" name="titulo" id="titulo" placeholder="Titulo de la tarea"></label>
+            </div>
+            <div class="fecha">
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha"></label>
+            </div>
+            <div>
+                <p>Descripcion:</p>
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </div>
+            <button id="anadir">Añadir</button>
+            <button id="cerrar">Cerrar</button>
+        </form>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
